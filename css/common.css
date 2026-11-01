@@ -1,0 +1,105 @@
+/* 기본적인거나, 공통적인것을 따로 파일로 빼서 만든다함. */
+body {
+  height: 1500px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.inner {
+  max-width: 1300px;
+  margin: auto;
+  position: relative;
+}
+
+.btn {
+  box-sizing: border-box;
+  width: 130px;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  transition: .4s;
+  display: block;
+}
+
+.btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn.btn-white {
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn.btn-white:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.btn.btn-gold {
+  border-color: #d0923e;
+  color: #d0923e;
+}
+
+.btn.btn-gold:hover {
+  background-color: #d0923e;
+  color: #fff;
+}
+
+.btn.btn-green-reverse {
+  background-color: #00704a;
+  color: #fff;
+}
+
+.btn.btn-green-reverse:hover {
+  background-color: #fff;
+  color: #00704a;
+}
+
+.back-to-position{
+  opacity: 0;
+  transition: 1s;
+}
+.show .back-to-position{
+  opacity: 1;
+}
+
+
+/* 왼->오*/
+.back-to-position.to-right{
+  transform: translateX(-150px);
+}
+.show .back-to-position.to-right{
+  transform: translateX(0);
+}
+
+
+/* 오->왼*/
+.back-to-position.to-left{
+  transform: translateX(150px);
+}
+.show .back-to-position.to-left{
+  transform: translateX(0);
+}
+
+.show .back-to-position.delay-1{
+  transition-delay: .3s;
+}
+.show .back-to-position.delay-2{
+  transition-delay: .5s;
+}
+.show .back-to-position.delay-3{
+  transition-delay: .7s;
+}
+.show .back-to-position.delay-4{
+  transition-delay: .9s;
+}
+
+
